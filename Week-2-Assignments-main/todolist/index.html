@@ -1,0 +1,53 @@
+<html>
+    <head><title>TODO List</title>
+
+    </head>
+    <body>
+
+        <h1>TODO-List</h1>
+        <label for="title">Title</label>
+        <input type="text" id="title">
+        <label for="description">Description</label>
+        <input type="text" id="description">
+        <button onclick="submit()">Submit</button>
+        <div id="mainDiv"></div>
+
+
+
+        <script>
+            function callback2(data) {
+                const mainDiv = document.querySelector('#mainDiv');
+                const a = document.createElement('div');
+                const b = document.createElement('div');
+                const child1 = data.title;
+                const child2 = data.description;
+                
+                const grandchild1 = document.createTextNode(child1);
+                const grandchild2 = document.createTextNode(child2);
+                
+                a.appendChild(grandchild1);
+                a.appendChild(grandchild2);
+                
+                mainDiv.appendChild(a);
+            }
+
+            function callback1(response){
+                response.json().then(callback2)
+            }
+            function submit(){
+                const title = document.querySelector('#title').value;
+                const description = document.querySelector('#description').value;
+                console.log(title,description)
+                fetch('http://localhost:3000/todos', {
+                    method: 'POST',
+                    body: JSON.stringify({
+                        title:title,
+                        description:description
+                    }),
+                    headers: { 'Content-Type': 'application/json' }
+                }).then(callback1)
+            }
+        </script>
+
+    </body>
+</html>

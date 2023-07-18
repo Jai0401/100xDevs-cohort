@@ -1,0 +1,13 @@
+@import url("https://cdn.jsdelivr.net/npm/water.css@2/out/water.css");
+
+.navbar ul li{
+    display: inline-block;
+    margin: 10px;
+    font-size: 25px;
+}
+.navbar ul{
+    display: inline;
+}
+.navbar h1{
+    display: inline;
+}

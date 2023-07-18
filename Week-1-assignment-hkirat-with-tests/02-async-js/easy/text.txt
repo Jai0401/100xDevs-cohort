@@ -1,0 +1,1 @@
+Hi, there! You are now reading a text file using 'fs' library of nodejs.

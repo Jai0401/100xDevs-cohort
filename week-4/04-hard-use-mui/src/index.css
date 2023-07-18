@@ -1,0 +1,98 @@
+/* @import url("https://cdn.jsdelivr.net/npm/water.css@2/out/water.css"); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Mono:wght@600&display=swap');
+
+
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: lightgray;
+}
+
+.navbar ul li{
+    display: inline-block;
+    margin: 15px;
+    font-size: 25px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #FAF0D7;
+}
+
+.navbar-logo{
+    text-decoration: none;
+    padding:0 10px;
+}
+.navbar-links{
+    align-items: center;
+}
+.login-btn{
+    display: flex;
+    align-items: center;
+    padding:0 10px;
+
+}
+.login-btn button{
+    font-family: 'Roboto Mono', monospace;
+}
+.landing{
+    text-align: center;
+}
+
+.login-card button{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.login{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.login-card{
+    padding: 30px;
+    border: 2px solid lightblue;
+    background-color: #FAF0D7;
+}
+
+.signup-card button{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.signup{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+.signup-card{
+    /* width: 300px; */
+    padding: 30px;
+    border: 2px solid lightblue;
+    background-color: #FAF0D7;
+}
+
+.showcourses{
+    /* width: 400px; */
+    display: flex;
+    justify-content: center;
+
+}
+.showcourses-list{
+    width: 400px;
+}
+
+.logout-btn{
+    display: flex;
+    align-items: center;
+    padding:0 10px;
+    margin-left: 79.21px;
+
+}
+.logout-btn button{
+    font-family: 'Roboto Mono', monospace;
+}
